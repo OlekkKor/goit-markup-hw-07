@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 :root {
   --primary-text-color: #212121;
   --black-pure-color: #000;
@@ -681,6 +695,7 @@ img {
   padding-left: 22px;
   margin: 0px;
   background-color: var(--gray-background);
+  font-weight: 500;
 }
 .portfolio-buttons-list .button:hover, .portfolio-buttons-list .button:focus {
   color: var(--white-color);
@@ -782,20 +797,6 @@ img {
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-color);
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 .backdrop {
